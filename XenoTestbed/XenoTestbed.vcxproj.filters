@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{3940f8e3-b0bc-46b8-9640-4b4b7f2042a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{075f4b56-e74c-47ee-8474-fe9753565db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\TestXenoCollide">
+      <UniqueIdentifier>{d3f14d3c-0a09-422f-b6a6-9a475a3e5dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapPtr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlineFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackBall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XenoTestbed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XenoTestbedWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\Arbiter.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\Collide.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\CollideGeometry.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\Constraint.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\Contact.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\DebugWidget.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\HullMaker.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\ListVector.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\MathUtil.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\RenderPolytope.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\RigidBody.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\TestXenoCollide\ShrinkWrap.h">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XenoTestbed.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\Arbiter.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\Collide.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\CollideGeometry.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\Constraint.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\Contact.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\DebugWidget.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\HullMaker.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\MathUtil.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\RenderPolytope.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\RigidBody.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\ShrinkWrap.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestXenoCollide\TestXenoCollide.cpp">
+      <Filter>Tests\TestXenoCollide</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlineFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XenoTestbed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XenoTestbedWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

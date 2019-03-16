@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{083367A8-9896-4203-85BD-0EFC5C6E903D}</ProjectGuid>
+    <RootNamespace>XenoTestbed</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(CDC_DIR)/runtime;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CDC_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(CDC_DIR)/runtime;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CDC_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawUtil.h" />
+    <ClInclude Include="MapPtr.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="OutlineFont.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestModule.h" />
+    <ClInclude Include="Tests\TestXenoCollide\Arbiter.h" />
+    <ClInclude Include="Tests\TestXenoCollide\Collide.h" />
+    <ClInclude Include="Tests\TestXenoCollide\CollideGeometry.h" />
+    <ClInclude Include="Tests\TestXenoCollide\Constraint.h" />
+    <ClInclude Include="Tests\TestXenoCollide\Contact.h" />
+    <ClInclude Include="Tests\TestXenoCollide\DebugWidget.h" />
+    <ClInclude Include="Tests\TestXenoCollide\HullMaker.h" />
+    <ClInclude Include="Tests\TestXenoCollide\ListVector.h" />
+    <ClInclude Include="Tests\TestXenoCollide\MathUtil.h" />
+    <ClInclude Include="Tests\TestXenoCollide\RenderPolytope.h" />
+    <ClInclude Include="Tests\TestXenoCollide\RigidBody.h" />
+    <ClInclude Include="Tests\TestXenoCollide\ShrinkWrap.h" />
+    <ClInclude Include="TrackBall.h" />
+    <ClInclude Include="XenoTestbed.h" />
+    <ClInclude Include="XenoTestbedWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XenoTestbed.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawUtil.cpp" />
+    <ClCompile Include="MapPtr.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="OutlineFont.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="TestModule.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\Arbiter.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\Collide.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\CollideGeometry.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\Constraint.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\Contact.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\DebugWidget.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\HullMaker.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\MathUtil.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\RenderPolytope.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\RigidBody.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\ShrinkWrap.cpp" />
+    <ClCompile Include="Tests\TestXenoCollide\TestXenoCollide.cpp" />
+    <ClCompile Include="TrackBall.cpp" />
+    <ClCompile Include="XenoTestbed.cpp" />
+    <ClCompile Include="XenoTestbedWindow.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="XenoTestbed.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -818,7 +818,7 @@ inline float64 Abs(float64 a)
 
 inline Vector64 CompAbs(const Vector64& a)
 {
-	return Vector64(abs(a.X()), abs(a.Y()), abs(a.Z()));
+	return Vector64(Abs(a.X()), Abs(a.Y()), Abs(a.Z()));
 }
 
 inline Vector64 CompMin(const Vector64& a, const Vector64& b)
